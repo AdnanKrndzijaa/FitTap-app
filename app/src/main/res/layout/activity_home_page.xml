@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="onLegClick"
+    tools:context=".HomePage">
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bgimage2white" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="169dp"
+        android:layout_height="110dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/viber_image_2022_03_26_18_31_00_873" />
+
+    <TextView
+        android:id="@+id/descText9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="2022 Ⓒ Developed by TrioFantastico"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.952"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/descText8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Choose your program and work on your body every day.                                      Satisfy your needs for a beautiful look."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_text"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/abbImageButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="34dp"
+        android:onClick="onAbbClick"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descText8"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/legImageButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="34dp"
+        android:onClick="onLegClick"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/abbImageButton"
+        app:layout_constraintTop_toBottomOf="@+id/descText8"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/bicepsImageButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:onClick="onArmClick"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/absDesc"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/sholderImageButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="24dp"
+        android:onClick="onBackClick"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bicepsImageButton"
+        app:layout_constraintTop_toBottomOf="@+id/legsDesc"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="32dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/absDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="ABS"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/abbImageButton"
+        app:layout_constraintStart_toStartOf="@+id/abbImageButton"
+        app:layout_constraintTop_toBottomOf="@+id/abbImageButton" />
+
+    <TextView
+        android:id="@+id/armsDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="ARMS"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/bicepsImageButton"
+        app:layout_constraintStart_toStartOf="@+id/bicepsImageButton"
+        app:layout_constraintTop_toBottomOf="@+id/bicepsImageButton" />
+
+    <TextView
+        android:id="@+id/shouldersDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="SHOULDERS"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/sholderImageButton"
+        app:layout_constraintStart_toStartOf="@+id/sholderImageButton"
+        app:layout_constraintTop_toBottomOf="@+id/sholderImageButton" />
+
+    <TextView
+        android:id="@+id/legsDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="LEGS"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/legImageButton"
+        app:layout_constraintStart_toStartOf="@+id/legImageButton"
+        app:layout_constraintTop_toBottomOf="@+id/legImageButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
